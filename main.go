@@ -34,8 +34,6 @@ func main() {
 		result = result + e.Text + "\n"
 		if strings.Contains(result, "wp-") {
 			mw := io.MultiWriter(os.Stdout, a)
-			x := e.Request.URL
-			fmt.Println(x)
 			fmt.Fprintln(mw, *e.Request.URL)
 
 		}
