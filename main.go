@@ -16,7 +16,7 @@ import (
 
 func main() {
 	var result string
-	a, _ := os.Create("answers.txt")
+	a, _ := os.Create("slightly_smiling_face_emoji.txt")
 
 	filerc, err := os.Open("inputs.txt")
 	if err != nil {
@@ -34,6 +34,8 @@ func main() {
 		result = result + e.Text + "\n"
 		if strings.Contains(result, "wp-") {
 			mw := io.MultiWriter(os.Stdout, a)
+			x := e.Request.URL
+			fmt.Println(x)
 			fmt.Fprintln(mw, *e.Request.URL)
 
 		}
