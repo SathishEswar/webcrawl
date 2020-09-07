@@ -1,2 +1,1 @@
-{https   play.golang.org /p/9T-bZ_A17wX  false  }
-{https   play.golang.org /p/YlimTovwcvY  false  }
+{https   getemoji.com /  false  }

@@ -32,7 +32,7 @@ func main() {
 
 	c.OnHTML("body", func(e *colly.HTMLElement) {
 		result = result + e.Text + "\n"
-		if strings.Contains(result, "wp-") {
+		if strings.Contains(result, "😘") {
 			mw := io.MultiWriter(os.Stdout, a)
 			fmt.Fprintln(mw, *e.Request.URL)
 
